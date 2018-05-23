@@ -1,0 +1,9 @@
+version: "3.6"
+services:
+  "rest-server":
+    restart: unless-stopped
+    ports:
+      - "8080:8080"
+    build:
+      context: "."
+      dockerfile: "Dockerfile"
